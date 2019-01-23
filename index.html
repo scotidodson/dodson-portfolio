@@ -11,29 +11,42 @@
   <body>
     <script src="src/index.js"></script>
     <nav class="navigation">
-      <h4 class="nav-link">HOME</h4>
-      <h4 class="nav-link">ABOUT</h4>
-      <h4 class="nav-link">PROJECTS</h4>
-      <h4 class="nav-link">BLOG</h4>
-      <h4 class="nav-link">RESUME</h4>
-      <h4 class="nav-link">CONTACT</h4>
+      <h4 class="nav-link" data-id="home">HOME</h4>
+      <h4 class="nav-link" data-id="about">ABOUT</h4>
+      <h4 class="nav-link" data-id="projects">PROJECTS</h4>
+      <h4 class="nav-link" data-id="blog">BLOG</h4>
+      <h4 class="nav-link" data-id="resume">RESUME</h4>
     </nav>
 
     <div class="home">
-      <img class="sd-logo" src="./images/sd0.png" alt="SCOTI DODSON">
-      <a href="#">github</a>
-      <a href="#">medium</a>
-      <a href="#">twitter</a>
-      <a href="#">linkedin</a>
-      <a href="#">email</a>
+      <div class="logo">
+        <img class="sd-logo" src="./images/sd0.png" alt="SCOTI DODSON">
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/scotidodson" target="_blank">
+          <img src="./images/icons/github_gray.png" width="50px" alt="github" class="social">
+        </a>
+        <a href="https://www.linkedin.com/in/scotidodson/" target="_blank">
+          <img src="./images/icons/linkedin_gray.png" width="50px" alt="linkedin" class="social">
+        </a>
+        <a href="https://twitter.com/scoti_" target="_blank">
+          <img src="./images/icons/twitter_gray.png" width="50px" alt="twitter" class="social">
+        </a>
+        <a href="https://medium.com/@scotidodson" target="_blank">
+          <img src="./images/icons/medium_gray.png" width="50px" alt="medium" class="social">
+        </a>
+        <a href="mailto:scotidodson@gmail.com">
+          <img src="./images/icons/email_gray.png" width="50px" alt="email" class="social">
+        </a>
+      </div>
     </div>
 
-    <div class="about">
+    <div class="about" hidden>
       <h1>about</h1>
       <p>This is an intro.</p>
     </div>
 
-    <div class="projects">
+    <div class="projects" hidden>
       <h1>projects</h1>
       <div class="project-container">
         <div class="project-card">
@@ -74,7 +87,7 @@
       </div>
     </div>
 
-    <div class="blog">
+    <div class="blog" hidden>
       <h1>blog</h1>
       <div class="blog-container">
         <div class="blog-card">
@@ -103,13 +116,6 @@
           <p>excerpt here</p>
         </div>
       </div>
-    </div>
-
-    <div class="contact">
-      <h1>contact me</h1>
-      <p>scotidodson@gmail.com</p>
-      <p>hello@scotidodson.com</p>
-      <p>240-313-5632</p>
     </div>
 
   </body>

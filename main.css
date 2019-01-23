@@ -3,4 +3,49 @@ html {
   color: #eaefef;
   font-family: helvetica neue;
   font-kerning: 5px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.nav-link {
+  margin: 1%;
+}
+
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social {
+  margin: 2%;
+}
+
+.logo {
+  margin-top: 2%;
 }
