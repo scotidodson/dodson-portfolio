@@ -1,9 +1,13 @@
 html {
-  background-color: #10202f;
   color: #eaefef;
   font-family: helvetica neue;
   font-kerning: 5px;
+}
+
+body {
+  background-color: #10202f;
   text-align: center;
+
 }
 
 .project-container {
@@ -33,18 +37,33 @@ html {
   margin-top: 20%;
 }
 
+.navigation h4:hover {
+  color: #773832;
+}
+
 .nav-link {
   margin: 1%;
   cursor: crosshair;
 }
 
+.social-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 .social-icons a {
   text-decoration: none;
 }
 
-.social {
+.social-link {
   margin: 2%;
+  cursor: crosshair;
+}
+
+.social:hover {
+  width: 60px;
 }
 
 .logo {
