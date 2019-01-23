@@ -5,36 +5,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const about = document.querySelector('.about')
   const projects = document.querySelector('.projects')
   const blog = document.querySelector('.blog')
+  navigation.style.marginTop="20%"
 
   // ------------------------- LISTENERS ------------------------------------
 
     navigation.addEventListener('click', (event) => {
-      // check for value & change page accordingly
-      console.log('clicked nav');
       switch (event.target.dataset.id) {
         case 'home':
-          document.querySelector('.navigation').style.marginTop="20%"
+          navDown()
           home.hidden = false
           about.hidden = true
           projects.hidden = true
           blog.hidden = true
           break;
         case 'about':
-          document.querySelector('.navigation').style.marginTop="5%"
+          navUp()
           home.hidden = true
           about.hidden = false
           projects.hidden = true
           blog.hidden = true
           break;
         case 'projects':
-          document.querySelector('.navigation').style.marginTop="5%"
+          navUp()
           home.hidden = true
           about.hidden = true
           projects.hidden = false
           blog.hidden = true
           break;
         case 'blog':
-          document.querySelector('.navigation').style.marginTop="5%"
+          navUp()
           home.hidden = true
           about.hidden = true
           projects.hidden = true
@@ -56,5 +55,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ------------------------- FUNCTIONS ------------------------------------
 
-    
+    function navUp() {
+      let current = parseInt(navigation.style.marginTop)
+      let changer = setInterval(()=>{
+          if(parseInt(current) === 5){
+            clearInterval(changer)
+          } else {
+            current-= .05
+            navigation.style.marginTop = `${current}%`
+          }
+      }, 3)
+    }
+
+    function navDown() {
+      let current = parseInt(navigation.style.marginTop)
+      let changer = setInterval(()=>{
+          if(parseInt(current) === 20){
+            clearInterval(changer)
+          } else {
+            current+= .05
+            navigation.style.marginTop = `${current}%`
+          }
+      }, 3)
+    }
+
 }); // end of DOMContentLoaded
