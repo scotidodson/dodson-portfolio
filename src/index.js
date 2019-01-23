@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const about = document.querySelector('.about')
   const projects = document.querySelector('.projects')
   const blog = document.querySelector('.blog')
-  navigation.style.marginTop="16%"
+  navigation.style.marginTop="12%"
 
   // ------------------------- LISTENERS ------------------------------------
 
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function navDown() {
       let current = parseInt(navigation.style.marginTop)
       let changer = setInterval(()=>{
-          if(parseInt(current) === 16){
+          if(parseInt(current) === 12){
             clearInterval(changer)
           } else {
             current+= .05
