@@ -32,9 +32,8 @@ body {
 
 .navigation {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20%;
 }
 
 .navigation h4:hover {
@@ -48,7 +47,7 @@ body {
 
 .social-icons {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -69,4 +68,9 @@ body {
 .logo {
   margin-top: 2%;
   cursor: none;
+}
+
+.social-icons img {
+  max-width: 100%;
+  height: auto !important;
 }
