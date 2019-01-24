@@ -128,6 +128,12 @@
     /* padding: 1%; */
   }
 
+  .navy-on-gold a{
+    text-decoration: none;
+    text-transform: none;
+    color: #c6a661;
+  }
+
   .navy-on-gold:hover {
     /* background-color: #eaefef; */
     color: #10202f;
@@ -137,7 +143,14 @@
     padding-left: 2%;
     padding-right: 1%;
     display: inline-block;
+
     /* padding: 1%; */
+  }
+
+  .navy-on-gold:hover a {
+    text-decoration: underline;
+    color: #10202f;
+    cursor: crosshair;
   }
 
   .pop-up {
