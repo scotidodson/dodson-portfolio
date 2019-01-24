@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const about = document.querySelector('.about')
   const projects = document.querySelector('.projects')
   const blog = document.querySelector('.blog')
+  const scoti = document.querySelector('.sd-photo')
+  const ruby = document.querySelector('.ruby')
+  const zelda = document.querySelector('.zelda')
   navigation.style.marginTop="12%"
 
   // ------------------------- LISTENERS ------------------------------------
@@ -53,6 +56,24 @@ document.addEventListener('DOMContentLoaded', () => {
       logo.src=`./images/sd${altLogo}.png`
     })
 
+    // ruby.addEventListener('mouseover', (event) => {
+    //   console.log('over scoti');
+    //   showImage(`./images/ruby.JPG`)
+    // })
+    //
+    // zelda.addEventListener('mouseover', (event) => {
+    //   console.log('over scoti');
+    //   showImage(`./images/zelda.JPG`)
+    // })
+    //
+    // ruby.addEventListener('mouseout', (event) => {
+    //   hideImage()
+    // })
+    //
+    // zelda.addEventListener('mouseout', (event) => {
+    //   hideImage()
+    // })
+
   // ------------------------- FUNCTIONS ------------------------------------
 
     function navUp() {
@@ -78,5 +99,16 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       }, 3)
     }
+
+    // function showImage(src) {
+    //     const img = document.getElementById('.pop-up-img');
+    //     const div = document.getElementById('.pop-up');
+    //     img.src = src;
+    //     div.style.display = "block";
+    // }
+    //
+    // function hideImage() {
+    //     document.getElementById('popup').style.display = "none";
+    // }
 
 }); // end of DOMContentLoaded

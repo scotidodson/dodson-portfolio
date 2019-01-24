@@ -104,7 +104,7 @@
     max-width: 600px;
     padding-left: 2%;
     text-align: left;
-    /* color: #c6a661; */
+    color: #c6a661;
   }
 
   .about-me p {
@@ -113,11 +113,22 @@
     letter-spacing: 1px;
     font-weight: 400;
     font-family: georgia;
-    outline-color: white;
 
   }
 
   .navy-on-gold {
+    /* background-color: #eaefef; */
+    /* color: #10202f;
+    background-color: #c6a661; */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 1%;
+    display: inline-block;
+    /* padding: 1%; */
+  }
+
+  .navy-on-gold:hover {
     /* background-color: #eaefef; */
     color: #10202f;
     background-color: #c6a661;
@@ -127,6 +138,15 @@
     padding-right: 1%;
     display: inline-block;
     /* padding: 1%; */
+  }
+
+  .pop-up {
+    /* height: 200px;
+    width: 100px;
+    margin-right: 100px; */
+    margin-top: 10px;
+    /* float: right; */
+    display:none;
   }
 
 }
