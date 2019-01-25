@@ -234,7 +234,24 @@
     margin-top: 5%;
   }
 
+  .blog-tag {
+    color: #eaefef;
+    background-color: #773832;
+    text-transform: uppercase;
+    font-family: helvetica neue;
+    font-kerning: 12px;
+    font-weight: 500;
+    font-size: .8em;
+    /* padding-left: 5px; */
+    padding: 5px;
+  }
 
+  .blog-tag-holder {
+    text-align: center;
+  }
 
+  .blog-tag-holder p {
+    padding: 0;
+  }
 
 }
