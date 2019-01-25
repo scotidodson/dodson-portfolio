@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function navUp() {
       let current = parseInt(navigation.style.marginTop)
       let changer = setInterval(()=>{
-          if(parseInt(current) === 5){
+          if(parseInt(current) === 0){
             clearInterval(changer)
           } else {
             current-= .05

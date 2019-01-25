@@ -38,6 +38,10 @@
     justify-content: center;
     font-size: 1.4em;
     letter-spacing: 2px;
+    position: sticky;
+    top: 0px;
+    background-color: #10202f;
+    padding-top: 2%;
 
   }
 
@@ -212,8 +216,6 @@
     max-width: 90%;
     padding-left: 5%;
     margin-left: 5%;
-
-
   }
 
   .navy-on-gold-blog a {
