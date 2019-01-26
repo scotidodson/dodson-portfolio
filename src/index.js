@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     logo.addEventListener('mouseover', (event) => {
       console.log('over logo');
-      let onDark = document.querySelector('#stylesheet').href.includes('main.css')
+      let onDark = document.querySelector('#stylesheet').href.includes('dark.css')
       let altLogo
       if (onDark) {
         altLogo = Math.floor(Math.random() * 7)
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     themeToggle.addEventListener('click', (event) => {
-      let onDark = document.querySelector('#stylesheet').href.includes('main.css')
+      let onDark = document.querySelector('#stylesheet').href.includes('dark.css')
       if (onDark) {
         toggle.innerText = "DARK THEME"
         logo.src=`./images/sd0.png`
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         twitter.src="./images/icons/twitter_gray.png"
         medium.src="./images/icons/medium_gray.png"
         email.src="./images/icons/email_gray.png"
-        sheetLink.href='main.css'
+        sheetLink.href='dark.css'
       }
     })
 
