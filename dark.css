@@ -200,11 +200,11 @@
 
   .navy-on-gold-blog {
     display: inline-block;
-    max-width: 70%;
+    /* max-width: 70%; */
     color: #eaefef;
     padding-bottom: 1%;
-    padding-left: 12%;
-    margin-left: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: justify;
   }
 

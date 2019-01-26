@@ -206,25 +206,22 @@
   }
 
   .navy-on-gold-blog {
-    display: inline-block;
-    max-width: 70%;
+    /* display: inline-block; */
+    /* max-width: 70%; */
     color: #10202f;
     padding-bottom: 1%;
-    padding-left: 12%;
-    margin-left: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: justify;
   }
 
   .navy-on-gold-blog:hover {
-    /* background-color: #eaefef; */
     color: #10202f;
     text-align: left;
     padding-top: 0;
     font-size: 1.4em;
     line-height: 24px;
-    max-width: 90%;
-    padding-left: 5%;
-    margin-left: 5%;
+    text-align: justify;
   }
 
   .navy-on-gold-blog a {
@@ -245,13 +242,15 @@
   }
 
   .blog-tag {
-    color: #eaefef;
+    color: #fff;
     background-color: #773832;
     text-transform: uppercase;
     font-family: helvetica neue;
     font-weight: 500;
     font-size: .8em;
     padding: 5px;
+    display: inline-block;
+
   }
 
   .blog-tag-holder {

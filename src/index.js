@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let onDark = document.querySelector('#stylesheet').href.includes('dark.css')
       let altLogo
       if (onDark) {
-        altLogo = Math.floor(Math.random() * 7)
+        altLogo = Math.floor(Math.random() * 6) + 1
       } else {
         altLogo = Math.floor(Math.random() * 4)
       }
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let onDark = document.querySelector('#stylesheet').href.includes('dark.css')
       if (onDark) {
         toggle.innerText = "DARK THEME"
-        logo.src=`./images/sd0.png`
+        logo.src=`./images/sd1.png`
         github.src="./images/icons/github_red.png"
         linkedin.src="./images/icons/linkedin_red.png"
         twitter.src="./images/icons/twitter_red.png"
@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sheetLink.href='light.css'
       } else {
         toggle.innerText = "LIGHT THEME"
+        logo.src=`./images/sd1.png`
         github.src="./images/icons/github_gray.png"
         linkedin.src="./images/icons/linkedin_gray.png"
         twitter.src="./images/icons/twitter_gray.png"
