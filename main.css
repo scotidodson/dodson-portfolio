@@ -1,4 +1,4 @@
-@media screen and (min-width: 751px) {
+/* @media screen and (min-width: 801px) { */
   html {
   color: #eaefef;
   font-family: helvetica neue;
@@ -18,7 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 1.45em;
+    font-size: 1.5em;
     letter-spacing: 2px;
     position: sticky;
     top: 0px;
@@ -238,4 +238,4 @@
   }
 
 
-}
+/* } */
