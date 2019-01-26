@@ -73,22 +73,22 @@ document.addEventListener('DOMContentLoaded', () => {
       let onDark = document.querySelector('#stylesheet').href.includes('dark.css')
       if (onDark) {
         toggle.innerText = "DARK THEME"
-        logo.src=`./images/sd1.png`
         github.src="./images/icons/github_red.png"
         linkedin.src="./images/icons/linkedin_red.png"
         twitter.src="./images/icons/twitter_red.png"
         medium.src="./images/icons/medium_red.png"
         email.src="./images/icons/email_red.png"
         sheetLink.href='light.css'
+        logo.src=`./images/sd1.png`
       } else {
         toggle.innerText = "LIGHT THEME"
-        logo.src=`./images/sd1.png`
         github.src="./images/icons/github_gray.png"
         linkedin.src="./images/icons/linkedin_gray.png"
         twitter.src="./images/icons/twitter_gray.png"
         medium.src="./images/icons/medium_gray.png"
         email.src="./images/icons/email_gray.png"
         sheetLink.href='dark.css'
+        logo.src=`./images/sd1.png`
       }
     })
 

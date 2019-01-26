@@ -90,14 +90,12 @@
     font-family: helvetica neue;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: .8em;
-    padding: 8px;
+    font-size: 1em;
+    padding: 10px;
   }
 
   .toggle:hover {
-    font-size: .85em;
-    font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
   }
 
   /******* ABOUT *******/
@@ -260,8 +258,63 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 4%;
   }
 
   .project-card {
+    max-width: 300px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-color: #c6a661;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2%;
+    /* box-shadow: 1px   #10202f;  */
 
+  }
+
+  .project-card h4 {
+    color: #c6a661;
+    font-family: helvetica neue;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  .project-tag {
+    color: #eaefef;
+    /* background-color: #eaefef; */
+    background-color: #773832;
+    text-transform: uppercase;
+    font-family: helvetica neue;
+    font-weight: 500;
+    font-size: .8em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* display: inline-block; */
+    margin: 1%;
+    line-height: 26px;
+
+  }
+
+  .project-tag-holder {
+    text-align: center;
+  }
+
+  .project-card a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #c6a661;
+    font-family: helvetica neue;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: crosshair;
   }
