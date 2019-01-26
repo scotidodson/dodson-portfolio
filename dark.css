@@ -1,8 +1,6 @@
-/* @media screen and (min-width: 801px) { */
   html {
   color: #eaefef;
   font-family: helvetica neue;
-  font-kerning: 5px;
   }
 
   body {
@@ -269,6 +267,3 @@
   .project-card {
 
   }
-
-
-/* } */
