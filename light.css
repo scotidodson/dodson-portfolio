@@ -1,12 +1,12 @@
 /* @media screen and (min-width: 801px) { */
   html {
-  color: #eaefef;
+  color: #394d63;
   font-family: helvetica neue;
   font-kerning: 5px;
   }
 
   body {
-    background-color: #10202f;
+    background-color: #fff;
     text-align: center;
     width: 100vw;
 
@@ -22,7 +22,7 @@
     letter-spacing: 2px;
     position: sticky;
     top: 0px;
-    background-color: #10202f;
+    background-color: #fff;
     padding-top: 8%;
     padding-bottom: 2%;
   }
@@ -34,6 +34,13 @@
   .nav-link {
     margin: 1%;
     cursor: crosshair;
+    /* background-color: #394d63; */
+    background-color: #10202f;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .social-icons {
@@ -84,8 +91,8 @@
   }
 
   .toggle {
-    color: #eaefef;
-    background-color: #773832;
+    color: #fff;
+    background-color: #10202f;
     text-transform: uppercase;
     font-family: helvetica neue;
     letter-spacing: 2px;
@@ -108,21 +115,25 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .scoti img {
     max-width: 300px;
     border-radius: 50%;
-    border-style: solid;
-    border-color: #eaefef;
-    border-width: 5px;
   }
 
   .about-me {
     max-width: 600px;
     padding-left: 2%;
     text-align: left;
-    color: #c6a661;
+    color: #10202f;
+    /* color: #c6a661; */
+    border-left-color: #773832;
+    border-left-style: solid;
+    border-left-width: 6px;
+    margin-left: 3%;
   }
 
   .about-me p {
@@ -147,20 +158,20 @@
     text-transform: none;
     color: #c6a661;
   }
-
+/*
   .navy-on-gold:hover {
     color: #10202f;
+    color: #fff;
     background-color: #c6a661;
+    background-color: #10202f;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 2%;
     padding-right: 1%;
     display: inline-block;
-  }
+  } */
 
   .navy-on-gold:hover a {
-    text-decoration: underline;
-    color: #10202f;
     cursor: crosshair;
   }
 
@@ -180,7 +191,7 @@
     margin-bottom: 2%;
     margin-top: 1%;
     color: #c6a661;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 22px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -201,7 +212,7 @@
   .navy-on-gold-blog {
     display: inline-block;
     max-width: 70%;
-    color: #eaefef;
+    color: #10202f;
     padding-bottom: 1%;
     padding-left: 12%;
     margin-left: 2%;
@@ -209,11 +220,11 @@
   }
 
   .navy-on-gold-blog:hover {
-    background-color: #eaefef;
+    /* background-color: #eaefef; */
     color: #10202f;
     text-align: left;
     padding-top: 0;
-    font-size: 1.6em;
+    font-size: 1.4em;
     max-width: 90%;
     padding-left: 5%;
     margin-left: 5%;

@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navigation = document.querySelector('.navigation')
+  const sheetLink = document.querySelector('#stylesheet')
+  const themeToggle = document.querySelector('.theme-toggle')
+  const github = document.querySelector('.github')
+  const linkedin = document.querySelector('.linkedin')
+  const twitter = document.querySelector('.twitter')
+  const medium = document.querySelector('.medium')
+  const email = document.querySelector('.email')
+  const toggle = document.querySelector('.toggle')
   const logo = document.querySelector('.sd-logo')
   const home = document.querySelector('.home')
   const about = document.querySelector('.about')
@@ -8,35 +16,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const scoti = document.querySelector('.sd-photo')
   const ruby = document.querySelector('.ruby')
   const zelda = document.querySelector('.zelda')
-  navigation.style.marginTop="12%"
 
   // ------------------------- LISTENERS ------------------------------------
 
     navigation.addEventListener('click', (event) => {
       switch (event.target.dataset.id) {
         case 'home':
-          navDown()
+          // navigation.style.marginTop="12%"
           home.hidden = false
           about.hidden = true
           projects.hidden = true
           blog.hidden = true
           break;
         case 'about':
-          navUp()
+          // navigation.style.marginTop="0%"
           home.hidden = true
           about.hidden = false
           projects.hidden = true
           blog.hidden = true
           break;
         case 'projects':
-          navUp()
+          // navigation.style.marginTop="0%"
           home.hidden = true
           about.hidden = true
           projects.hidden = false
           blog.hidden = true
           break;
         case 'blog':
-          navUp()
+          // navigation.style.marginTop="0%"
           home.hidden = true
           about.hidden = true
           projects.hidden = true
@@ -52,8 +59,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     logo.addEventListener('mouseover', (event) => {
       console.log('over logo');
-      const altLogo = Math.floor(Math.random() * 7)
+      let onDark = document.querySelector('#stylesheet').href.includes('main.css')
+      let altLogo
+      if (onDark) {
+        altLogo = Math.floor(Math.random() * 7)
+      } else {
+        altLogo = Math.floor(Math.random() * 4)
+      }
       logo.src=`./images/sd${altLogo}.png`
+    })
+
+    themeToggle.addEventListener('click', (event) => {
+      let onDark = document.querySelector('#stylesheet').href.includes('main.css')
+      if (onDark) {
+        toggle.innerText = "DARK THEME"
+        logo.src=`./images/sd0.png`
+        github.src="./images/icons/github_red.png"
+        linkedin.src="./images/icons/linkedin_red.png"
+        twitter.src="./images/icons/twitter_red.png"
+        medium.src="./images/icons/medium_red.png"
+        email.src="./images/icons/email_red.png"
+        sheetLink.href='light.css'
+      } else {
+        toggle.innerText = "LIGHT THEME"
+        github.src="./images/icons/github_gray.png"
+        linkedin.src="./images/icons/linkedin_gray.png"
+        twitter.src="./images/icons/twitter_gray.png"
+        medium.src="./images/icons/medium_gray.png"
+        email.src="./images/icons/email_gray.png"
+        sheetLink.href='main.css'
+      }
     })
 
     // ruby.addEventListener('mouseover', (event) => {
