@@ -6,7 +6,7 @@
   body {
     background-color: #10202f;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 
   }
 
@@ -43,6 +43,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 1%;
   }
 
   .social-icons a {
@@ -230,10 +231,6 @@
     cursor: crosshair;
   }
 
-  .first-blog {
-    margin-top: 5%;
-  }
-
   .blog-tag {
     color: #eaefef;
     background-color: #773832;
@@ -242,6 +239,8 @@
     font-weight: 500;
     font-size: .8em;
     padding: 5px;
+    margin: 1%;
+    line-height: 28px;
   }
 
   .blog-tag-holder {
@@ -259,6 +258,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .project-card {
@@ -301,7 +302,7 @@
     padding-right: 10px;
     /* display: inline-block; */
     margin: 1%;
-    line-height: 26px;
+    line-height: 28px;
 
   }
 
