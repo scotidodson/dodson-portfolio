@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
           blog.hidden = false
           break;
         case 'resume':
-          window.open('https://drive.google.com/file/d/1OLpYbvGF9rcMHzVW8KRfVxD0SWmE_Kfb/view?usp=sharing');
+          window.open('https://drive.google.com/file/d/1Tm4DTI_M8JdYUoufDwubisBKz6ph4fNk/view?usp=sharing');
           break;
         default:
 
