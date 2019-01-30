@@ -178,7 +178,7 @@
     margin-bottom: 2%;
     margin-top: 1%;
     color: #c6a661;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 22px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -209,12 +209,12 @@
   .navy-on-gold-blog:hover {
     background-color: #eaefef;
     color: #10202f;
-    text-align: left;
+    /* text-align: left;
     padding-top: 0;
     font-size: 1.6em;
     max-width: 90%;
     padding-left: 5%;
-    margin-left: 5%;
+    margin-left: 5%; */
   }
 
   .navy-on-gold-blog a {

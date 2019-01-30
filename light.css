@@ -213,14 +213,14 @@
     text-align: justify;
   }
 
-  .navy-on-gold-blog:hover {
+  /* .navy-on-gold-blog:hover {
     color: #10202f;
     text-align: left;
     padding-top: 0;
     font-size: 1.4em;
     line-height: 24px;
     text-align: justify;
-  }
+  } */
 
   .navy-on-gold-blog a {
     text-decoration: none;
