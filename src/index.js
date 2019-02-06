@@ -135,6 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
       logo.src=`./images/sd${altLogo}.png`
     })
 
+    logo.addEventListener('mouseout', (event) => {
+      logo.src=`./images/sd1.png`
+    })
+
     themeToggle.addEventListener('click', (event) => {
       let onDark = document.querySelector('#stylesheet').href.includes('dark.css')
       if (onDark) {
