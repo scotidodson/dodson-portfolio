@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     social.addEventListener('mouseover', (event) => {
-      console.log(event.target.alt);
       switch (event.target.alt) {
         case 'github':
           github.src="./images/icons/github_gold.png"
