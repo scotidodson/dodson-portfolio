@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     logo.addEventListener('mouseover', (event) => {
-      console.log('over logo');
       let onDark = document.querySelector('#stylesheet').href.includes('dark.css')
       let altLogo
       if (onDark) {
@@ -91,24 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
         logo.src=`./images/sd1.png`
       }
     })
-
-    // ruby.addEventListener('mouseover', (event) => {
-    //   console.log('over scoti');
-    //   showImage(`./images/ruby.JPG`)
-    // })
-    //
-    // zelda.addEventListener('mouseover', (event) => {
-    //   console.log('over scoti');
-    //   showImage(`./images/zelda.JPG`)
-    // })
-    //
-    // ruby.addEventListener('mouseout', (event) => {
-    //   hideImage()
-    // })
-    //
-    // zelda.addEventListener('mouseout', (event) => {
-    //   hideImage()
-    // })
 
   // ------------------------- FUNCTIONS ------------------------------------
 
