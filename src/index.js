@@ -1,20 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navigation = document.querySelector('.navigation')
-  const sheetLink = document.querySelector('#stylesheet')
-  const themeToggle = document.querySelector('.theme-toggle')
-  const github = document.querySelector('.github')
-  const linkedin = document.querySelector('.linkedin')
-  const twitter = document.querySelector('.twitter')
-  const medium = document.querySelector('.medium')
-  const email = document.querySelector('.email')
-  const toggle = document.querySelector('.toggle')
-  const logo = document.querySelector('.sd-logo')
-  const home = document.querySelector('.home')
   const about = document.querySelector('.about')
-  const projects = document.querySelector('.projects')
   const blog = document.querySelector('.blog')
-  const scoti = document.querySelector('.sd-photo')
+  const email = document.querySelector('.email')
+  const github = document.querySelector('.github')
+  const home = document.querySelector('.home')
+  const linkedin = document.querySelector('.linkedin')
+  const logo = document.querySelector('.sd-logo')
+  const medium = document.querySelector('.medium')
+  const navigation = document.querySelector('.navigation')
+  const projects = document.querySelector('.projects')
   const ruby = document.querySelector('.ruby')
+  const scoti = document.querySelector('.sd-photo')
+  const sheetLink = document.querySelector('#stylesheet')
+  const social = document.querySelector('.social-icons')
+  const themeToggle = document.querySelector('.theme-toggle')
+  const toggle = document.querySelector('.toggle')
+  const twitter = document.querySelector('.twitter')
   const zelda = document.querySelector('.zelda')
 
   // ------------------------- LISTENERS ------------------------------------
@@ -54,6 +55,73 @@ document.addEventListener('DOMContentLoaded', () => {
           break;
         default:
 
+      }
+    })
+
+    social.addEventListener('mouseover', (event) => {
+      console.log(event.target.alt);
+      switch (event.target.alt) {
+        case 'github':
+          github.src="./images/icons/github_gold.png"
+          break;
+        case 'linkedin':
+          linkedin.src="./images/icons/linkedin_gold.png"
+          break;
+        case 'twitter':
+          twitter.src="./images/icons/twitter_gold.png"
+          break;
+        case 'medium':
+          medium.src="./images/icons/medium_gold.png"
+          break;
+        case 'email':
+          email.src="./images/icons/email_gold.png"
+          break;
+        default:
+          break;
+      }
+    })
+
+    social.addEventListener('mouseout', (event) => {
+      if (document.querySelector('#stylesheet').href.includes('dark.css')) {
+        switch (event.target.alt) {
+          case 'github':
+            github.src="./images/icons/github_gray.png"
+            break;
+          case 'linkedin':
+            linkedin.src="./images/icons/linkedin_gray.png"
+            break;
+          case 'twitter':
+            twitter.src="./images/icons/twitter_gray.png"
+            break;
+          case 'medium':
+            medium.src="./images/icons/medium_gray.png"
+            break;
+          case 'email':
+            email.src="./images/icons/email_gray.png"
+            break;
+          default:
+            break;
+        }
+      } else {
+        switch (event.target.alt) {
+          case 'github':
+            github.src="./images/icons/github_red.png"
+            break;
+          case 'linkedin':
+            linkedin.src="./images/icons/linkedin_red.png"
+            break;
+          case 'twitter':
+            twitter.src="./images/icons/twitter_red.png"
+            break;
+          case 'medium':
+            medium.src="./images/icons/medium_red.png"
+            break;
+          case 'email':
+            email.src="./images/icons/email_red.png"
+            break;
+          default:
+            break;
+        }
       }
     })
 
@@ -116,16 +184,5 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       }, 3)
     }
-
-    // function showImage(src) {
-    //     const img = document.getElementById('.pop-up-img');
-    //     const div = document.getElementById('.pop-up');
-    //     img.src = src;
-    //     div.style.display = "block";
-    // }
-    //
-    // function hideImage() {
-    //     document.getElementById('popup').style.display = "none";
-    // }
 
 }); // end of DOMContentLoaded
